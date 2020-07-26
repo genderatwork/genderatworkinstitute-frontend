@@ -307,8 +307,13 @@ input[type="text"],
 input[type="text"]:focus,
 button[type="submit"] {
   border-radius: 0;
-  outline: none;
   height: auto;
+}
+
+input[type="text"],
+input[type="text"]:focus{
+  outline: none;
+  box-shadow: none;
 }
 
 textarea:focus,

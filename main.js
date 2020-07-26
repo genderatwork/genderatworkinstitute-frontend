@@ -13,8 +13,15 @@ function initSearch() {
   }
 }
 
-function initPage() {
+function initNavbar(){
   initSearch();
+  var registerbutton =  $('a[href^="/register"]')
+  registerbutton.removeClass('px-4 py-2')
+  registerbutton.addClass('px-2')
+}
+
+function initPage() {
+  inittNavbar();
   alternateOrderOfCourses();
 }
 

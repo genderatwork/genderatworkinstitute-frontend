@@ -103,7 +103,7 @@ article.course a.odd {
 }
 
 .global-header .nav-links .secondary.nav-account .dropdown-user-menu{
-    height:auto
+    height:auto;
     background-color: #FFFFFF;
     border: none;
     box-shadow: 0 8px 10px 1px rgba(0,0,0,0.14),0 3px 14px 2px rgba(0,0,0,0.12),0 5px 5px -3px rgba(0,0,0,0.2);
@@ -170,8 +170,9 @@ article.course a.odd {
     border-bottom: 5px solid transparent;
 }
 
-.content-wrapper, .wrapper-preview-menu, .page-banner{
-    max-width: 1180px;
+.navbar.global-header, .footer, .content-wrapper, .wrapper-preview-menu, .page-banner{
+  max-width: 1440px;
+  margin: auto;
 }
 
 .wrapper-preview-menu{
@@ -300,6 +301,14 @@ span[role*="link"]:visited:focus,
 .footer p a:not(.btn):visited:hover,
 .footer p a:not(.btn):visited:focus{
     color: #31ddd1;
+}
+
+input[type="text"],
+input[type="text"]:focus,
+button[type="submit"] {
+  border-radius: 0;
+  outline: none;
+  height: auto;
 }
 
 textarea:focus,

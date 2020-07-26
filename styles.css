@@ -2,6 +2,54 @@
     background-color: #DDD;
 }
 
+
+
+.courses-listing {
+  display: grid;
+}
+
+.courses-listing-item {
+  display: flex;
+  /* flex-direction: row-reverse; */
+  width: 100%!important;
+}
+
+div.course-info.row {
+  width: 100%;
+}
+
+@media only screen and (max-width: 998px) {
+  article.course a {
+    text-align: center!important;
+    flex-direction: column!important;
+  }
+
+}
+
+div.cover-image img {
+  background: unset!important;
+  object-fit: contain;
+}
+
+
+article.course a {
+  display: flex!important;
+  justify-self: center;
+  width: 100%;
+}
+
+article.course a.even {
+  text-align: right;
+}
+
+article.course a.odd {
+  text-align: left!important;
+  flex-direction: row-reverse;
+}
+
+
+
+
 .landing-page-banner-text {
   color: #f2f2f2!important;
   text-shadow: 2px 2px #2f2f2f;

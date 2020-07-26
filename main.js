@@ -21,7 +21,7 @@ function initNavbar(){
 }
 
 function initPage() {
-  inittNavbar();
+  initNavbar();
   alternateOrderOfCourses();
 }
 

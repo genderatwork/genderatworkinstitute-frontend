@@ -6,9 +6,11 @@ function alternateOrderOfCourses() {
 
 function initSearch() {
   var navlist = $('.container-navbar-links ul.navbar-links')[1]
-  var navsearch = $('#navbar-search-form')[0]
-  navlist.appendChild(navsearch);
-  navsearch.style.display = 'inline-block'
+  if (navlist) {
+    var navsearch = $('#navbar-search-form')[0]
+    navlist.appendChild(navsearch);
+    navsearch.style.display = 'inline-block'
+  }
 }
 
 function initPage() {

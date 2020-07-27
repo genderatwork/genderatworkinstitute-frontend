@@ -1,7 +1,24 @@
 function alternateOrderOfCourses() {
-  $('article.course a').each(function(index) {
-    $(this).addClass(index % 2 == 0 ? 'even' : 'odd');
-  });
+  i = 0
+  // Check, whether the course list is generated already
+  if ( $('article.course').length === 0) {
+    // Break-out condition
+    if ( i > 10) return;
+    // Wait and try again
+    setTimeout(alternateOrderOfCourses, 300);
+  } else {
+    // Change the layout
+    if ($('.dashboard').length > 0) {
+      // We are on the dashboard page
+      $('article.course section').each(function(index) {  
+        $(this).addClass(index % 2 == 0 ? 'even' : 'odd');
+      });
+    } else{
+      $('article.course a').each(function(index) {
+        $(this).addClass(index % 2 == 0 ? 'even' : 'odd');
+      });    
+    }
+  }
 }
 
 function initSearch() {

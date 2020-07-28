@@ -26,30 +26,31 @@ div.course-info.row {
 
 }
 
+.courses-container .courses .courses-listing .courses-listing-item{
+  max-height:unset;
+}
+
 div.cover-image img ,
 div.wrapper-course-image img{
   background: unset!important;
   object-fit: contain!important;
+  height: auto!important;
 }
 
-
-/*
-article.course a {
-  display: flex!important;
-  justify-self: center;
-  width: 100%;
+.dashboard .my-courses .listing-courses .course-item .course-container {
+  padding: 0px;
 }
 
-article.course a.even {
-  text-align: right;
+.dashboard .main-container .my-courses .course .details .wrapper-course-image {
+  max-height:unset;
+  max-width:unset;
+  margin: 0px;
 }
 
-
-  flex-direction: rowd {
-  text-align: left!important;
-  flex-direction: row-reverse;
+.dashboard .main-container .my-courses .course .details .wrapper-course-details{
+  padding: 10px;
+  margin: 0px;
 }
-*/
 
 article.course a,
 article.course section{
@@ -98,10 +99,14 @@ article.course div.wrapper-course-details{
 .landing-page-description {
   margin: auto;
   color: #2f2f2f;
-  width: 42em;
+  max-width: 42em;
   font-size: 14pt;
 }
-
+@media (max-width: 575px) {
+  .landing-page-description {
+    padding: 0 0.75rem;
+  }
+}
 
 .home-intro {
   background-image: url(./gawbanner.png);

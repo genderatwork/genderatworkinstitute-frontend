@@ -41,6 +41,11 @@ div.wrapper-course-image img{
   padding: 0px;
 }
 
+
+.courses-container .courses .course .course-image .cover-image {
+  height:auto;
+}
+
 .dashboard .main-container .my-courses .course .details .wrapper-course-image {
   max-height:unset;
   max-width:unset;

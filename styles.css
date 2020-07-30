@@ -10,6 +10,10 @@ div,section,p,i:not(.fa),span:not(.fa),label{
     background-color: #DDD;
 }
 
+.window-wrap .global-header .header-logo a{
+  margin: 0px;
+}
+
 .courses-listing {
   display: grid;
 }
@@ -76,11 +80,13 @@ div.wrapper-course-image img{
 
 .courses-container .courses .course .course-info .course-name{
   padding: 20px 5px 0px 5px!important;
-  height: 72px;
-  display:table-cell;
-  vertical-align: text-bottom;
+  height:100px;
 }
-
+.courses-container .courses .course .course-info .course-title{
+  font-size: 25px;
+  line-height:1.5;
+  height: 72px!important;
+}
 .courses-container .courses .course .course-info .course-description{
   padding: 0px 20px 0px 20px!important;
   height:auto!important;
@@ -88,6 +94,7 @@ div.wrapper-course-image img{
 
 .courses-container .courses .course .course-info .course-date{
   padding: 20px!important;
+  font-size: 16px;
   height:57px;
 }
 
@@ -263,14 +270,60 @@ article.course div.wrapper-course-details{
     border-bottom: 5px solid transparent;
 }
 
+.course-info__content,.container.dashboard,
+section.dashboard.outside-app,
+.view-profile .profile-self .wrapper-profile-field-account-privacy .dashboard.u-field-account_privacy,
+.view-profile .dashboard.wrapper-profile-sections,.view-profile .dashboard.badge-set-display,
+.find-courses .courses-container,
+.university-profile .courses-container,
+.courses-container .courses .course,
+.view-course-info .info-wrapper,
+.view-courseware .course-wrapper,
+.view-login .container,
+.view-login section.outside-app,
+.view-login .view-profile .profile-self .wrapper-profile-field-account-privacy .u-field-account_privacy,
+.view-profile .profile-self .wrapper-profile-field-account-privacy .view-login .u-field-account_privacy,
+.view-login .view-profile .wrapper-profile-sections,
+.view-profile .view-login .wrapper-profile-sections,
+.view-login .view-profile .badge-set-display,
+.view-profile .view-login .badge-set-display,
+.view-register .container,
+.view-register section.outside-app,
+.view-register .view-profile .profile-self .wrapper-profile-field-account-privacy .u-field-account_privacy,
+.view-profile .profile-self .wrapper-profile-field-account-privacy .view-register .u-field-account_privacy,
+.view-register .view-profile .wrapper-profile-sections,
+.view-profile .view-register .wrapper-profile-sections,
+.view-register .view-profile .badge-set-display,
+.view-profile .view-register .badge-set-display,
+.view-passwordreset .container,
+.view-passwordreset section.outside-app,
+.view-passwordreset .view-profile .profile-self .wrapper-profile-field-account-privacy .u-field-account_privacy,
+.view-profile .profile-self .wrapper-profile-field-account-privacy .view-passwordreset .u-field-account_privacy,
+.view-passwordreset .view-profile .wrapper-profile-sections,
+.view-profile .view-passwordreset .wrapper-profile-sections,
+.view-passwordreset .view-profile .badge-set-display,
+.view-profile .view-passwordreset .badge-set-display,
+.view-login .introduction,
+.view-register .introduction,
+.view-passwordreset .introduction,
+.account-settings-container .wrapper-header,
+.account-settings-container .account-settings-sections,
+.static_page{
+    width: 100%;
+    min-width: 0;
+    max-width: 1360px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 0px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.04)
+}
+
 .navbar.global-header,
 .footer,
-.content-wrapper,
 .wrapper-preview-menu,
-.page-banner,
+.page-banner
 {
-  max-width: 1440px;
-  margin: auto;  
+  margin: auto;
 }
 
 .container.dashboard,
@@ -377,6 +430,24 @@ span[role*="link"]:visited:focus,
 .course-index .accordion .course-navigation .button-chapter:visited:focus {
   color: #31ddd1;
   text-decoration: none;
+}
+
+@media (max-width: 991px){
+  .mobile-menu .mobile-nav-link a:hover,
+  .mobile-menu .mobile-nav-link a:focus,
+  .mobile-menu .mobile-nav-link a:active {
+      background-color: #EAEAEA!important;
+      color: #313646!important;
+  }
+
+  .mobile-menu .mobile-nav-link form{
+    background-color: #FFF;
+    margin: auto;
+  }
+
+  .navbar.global-header .mobile-nav-item.mobile-nav-link{
+    width: 100%;
+  }
 }
 
 .course-header,

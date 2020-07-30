@@ -174,10 +174,11 @@ article.course div.wrapper-course-details{
   background-color: rgba(2,50,70,0.8);
 }
 
-.global-header{
+.navbar.global-header{
   position: -webkit-sticky; /* Safari */
   position: sticky;
-  top: 0;
+  top: 0;  
+  box-shadow: 0 1px 10px 1px rgba(0,0,0,0.14),0 5px 5px -3px rgba(0,0,0,0.2);
 }
 
 .global-header .nav-links .secondary .toggle-user-dropdown,
@@ -262,6 +263,10 @@ article.course div.wrapper-course-details{
     color: #1acfc3;
 }
 
+.navbar.global-header .course-header{
+  display:none;
+}
+
 .container-navbar-links a:hover{
     border-bottom:5px solid #1acfc3;
 }
@@ -270,7 +275,22 @@ article.course div.wrapper-course-details{
     border-bottom: 5px solid transparent;
 }
 
-.course-info__content,.container.dashboard,
+.container,
+section.outside-app,
+.view-profile .profile-self .wrapper-profile-field-account-privacy .u-field-account_privacy,
+.view-profile .wrapper-profile-sections,
+.view-profile .badge-set-display,
+.content-container,
+.course-info .container,
+.course-info section.outside-app,
+.course-info .view-profile .profile-self .wrapper-profile-field-account-privacy .u-field-account_privacy,
+.view-profile .profile-self .wrapper-profile-field-account-privacy .course-info .u-field-account_privacy,
+.course-info .view-profile .wrapper-profile-sections,
+.view-profile .course-info .wrapper-profile-sections,
+.course-info .view-profile .badge-set-display,
+.view-profile .course-info .badge-set-display,
+.course-info__content,
+.container.dashboard,
 section.dashboard.outside-app,
 .view-profile .profile-self .wrapper-profile-field-account-privacy .dashboard.u-field-account_privacy,
 .view-profile .dashboard.wrapper-profile-sections,.view-profile .dashboard.badge-set-display,
@@ -308,14 +328,12 @@ section.dashboard.outside-app,
 .view-passwordreset .introduction,
 .account-settings-container .wrapper-header,
 .account-settings-container .account-settings-sections,
-.static_page{
+.static_page,
+.course-info__banner{
     width: 100%;
     min-width: 0;
     max-width: 1360px;
     margin: 0 auto;
-    background: #fff;
-    border-radius: 0px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.04)
 }
 
 .navbar.global-header,

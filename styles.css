@@ -1,8 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body,
+h1,h2,.home>header .title>.heading-group p,section.outside-app h1,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6,
+div,section,p,i:not(.fa),span:not(.fa),label{
+  font-family: 'Roboto', sans-serif !important;
+  font-weight:300!important;
+}
+
 .window-wrap {
     background-color: #DDD;
 }
-
-
 
 .courses-listing {
   display: grid;
@@ -18,38 +24,66 @@ div.course-info.row {
   width: 100%;
 }
 
-@media only screen and (max-width: 998px) {
+@media only screen and (max-width: 640px) {
   article.course a {
     text-align: center!important;
     flex-direction: column!important;
   }
-
-}
-
-.courses-container .courses .courses-listing .courses-listing-item{
-  max-height:unset;
-}
-
-div.cover-image img ,
-div.wrapper-course-image img{
-  background: unset!important;
-  object-fit: contain!important;
-  height: auto!important;
 }
 
 .dashboard .my-courses .listing-courses .course-item .course-container {
   padding: 0px;
 }
 
+.courses-container .courses .courses-listing .courses-listing-item{
+  max-height:unset;
+}
+.courses-container .courses .course {
 
-.courses-container .courses .course .course-image .cover-image {
-  height:auto;
+}
+.courses-container .courses .course .course-image .cover-image{
+  height: 100%;
+}
+.courses-container .courses .course .course-image .cover-image::before {
+  height: 100%;
+}
+
+.courses-container .courses .course .course-image .cover-image .learn-more {
+  top:105px;
 }
 
 .dashboard .main-container .my-courses .course .details .wrapper-course-image {
   max-height:unset;
   max-width:unset;
   margin: 0px;
+}
+
+div.cover-image img ,
+div.wrapper-course-image img{
+  background: unset!important;
+  object-fit: cover!important;
+  height: 100%!important;
+}
+
+.courses-container .courses .course .course-info {
+  height:auto;
+}
+
+.courses-container .courses .course .course-info .course-name{
+  padding: 20px 5px 0px 5px!important;
+  height: 72px;
+  display:table-cell;
+  vertical-align: text-bottom;
+}
+
+.courses-container .courses .course .course-info .course-description{
+
+  padding: 0px 20px 0px 20px!important;
+}
+
+.courses-container .courses .course .course-info .course-date{
+  padding: 0px 20px 20px 20px!important;
+  height:37px;
 }
 
 .dashboard .main-container .my-courses .course .details .wrapper-course-details{
@@ -98,7 +132,6 @@ article.course div.wrapper-course-details{
 
 .landing-page-sub-heading {
   text-align: center;
-  font-weight: 300!important;
 }
 
 .landing-page-description {

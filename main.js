@@ -3,6 +3,7 @@ function alternateOrderOfCourses() {
   // Check, whether the course list is generated already
   if ( $('article.course').length === 0) {
     // Break-out condition
+    i++;
     if ( i > 10) return;
     // Wait and try again
     setTimeout(alternateOrderOfCourses, 300);

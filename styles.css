@@ -38,8 +38,13 @@ div.course-info.row {
 .courses-container .courses .courses-listing .courses-listing-item{
   max-height:unset;
 }
-.courses-container .courses .course {
 
+@media only screen and (max-width: 640px){
+  .courses-container .courses .course{
+    margin: .75rem;
+    padding:unset;
+    width:auto;
+  }
 }
 .courses-container .courses .course .course-image .cover-image{
   height: 100%;
@@ -77,13 +82,13 @@ div.wrapper-course-image img{
 }
 
 .courses-container .courses .course .course-info .course-description{
-
   padding: 0px 20px 0px 20px!important;
+  height:auto!important;
 }
 
 .courses-container .courses .course .course-info .course-date{
-  padding: 0px 20px 20px 20px!important;
-  height:37px;
+  padding: 20px!important;
+  height:57px;
 }
 
 .dashboard .main-container .my-courses .course .details .wrapper-course-details{

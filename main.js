@@ -1,12 +1,15 @@
 function alternateOrderOfCourses() {
-  i = 0
+  if( typeof this.counter == 'undefined' ) {
+      this.counter = 0;
+  }  
+  console.log(this.counter);
   // Check, whether the course list is generated already
   if ( $('article.course').length === 0) {
     // Break-out condition
-    i++;
-    if ( i > 10) return;
+    this.counter++;
+    if ( this.counter > 10) return;
     // Wait and try again
-    setTimeout(alternateOrderOfCourses, 300);
+    setTimeout(this, 300);
   } else {
     // Change the layout
     if ($('.dashboard').length > 0) {

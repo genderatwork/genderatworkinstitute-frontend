@@ -6,12 +6,24 @@ div,section,p,i:not(.fa),span:not(.fa),label{
   font-weight:300!important;
 }
 
-.window-wrap {
-    background-color: #DDD;
+.window-wrap{
+    background-color: #fff;
+}
+
+.content-wrapper,
+.content-wrapper .home-courses .courses,
+.container.dashboard,
+.find-courses,
+.find-courses .courses-container,
+.wrapper-account-settings,
+.wrapper-account-settings main:not(.home),
+.university-profile {
+    background-color: #FFF;
+    box-shadow: unset;
 }
 
 .window-wrap .global-header .header-logo a{
-  margin: 0px;
+  margin: 11px 0 0 0;
 }
 
 .courses-listing {
@@ -50,6 +62,11 @@ div.course-info.row {
     width:auto;
   }
 }
+
+.course-info{
+  margin-top:auto;
+}
+
 .courses-container .courses .course .course-image .cover-image{
   height: 100%;
 }
@@ -76,6 +93,7 @@ div.wrapper-course-image img{
 
 .courses-container .courses .course .course-info {
   height:auto;
+  
 }
 
 .courses-container .courses .course .course-info .course-name{
@@ -124,6 +142,7 @@ article.course section.odd {
 
 article.course section.course-info{
   width:100%;
+  height: auto;
 }
 
 article.course div.wrapper-course-image,
@@ -183,8 +202,12 @@ article.course div.wrapper-course-details{
 
 .global-header .nav-links .secondary .toggle-user-dropdown,
 .global-header .nav-links .secondary .toggle-user-dropdown:focus{
-    padding: 0px 10px;
     outline: none;
+}
+
+.global-header .nav-links .secondary .toggle-user-dropdown{
+  line-height: 27px;
+  padding: 25px 10px;
 }
 
 .global-header .nav-links .secondary.nav-account{
@@ -204,8 +227,12 @@ article.course div.wrapper-course-details{
     height:auto;
     background-color: #FFFFFF;
     border: none;
+    padding: .5rem 0;
+    border-radius: 5px;
     box-shadow: 0 8px 10px 1px rgba(0,0,0,0.14),0 3px 14px 2px rgba(0,0,0,0.12),0 5px 5px -3px rgba(0,0,0,0.2);
     text-align: left;
+    right: auto;
+    top: 65%;
 }
 
 .global-header .nav-links .secondary.nav-account .dropdown-user-menu .dropdown-item{
@@ -214,8 +241,9 @@ article.course div.wrapper-course-details{
 .global-header .nav-links .secondary.nav-account .dropdown-user-menu .dropdown-item a, 
 .global-header .nav-links .secondary.nav-account .dropdown-user-menu .dropdown-item a:hover{
     color: #313646;
-    padding: 5px 2rem 5px 2rem !important;    
+    padding: 5px 1rem 5px 1rem !important;    
     border-bottom: 0;
+    font-size: 16px;
 }
 
 .navbar.global-header{
@@ -246,10 +274,24 @@ article.course div.wrapper-course-details{
    margin-top: auto;
 }
 
-.nav-links .nav-login,.nav-links .nav-login.a:not(.btn),.navbar-links .nav-login,.navbar-links .nav-login.a:not(.btn){
+.search-bar .search-button,
+.search-bar .cancel-button,
+.search-bar .search-button:hover,
+.search-bar .cancel-button:hover,
+.search-bar .search-field{
+  border-radius: 0;
+}
+.nav-links .nav-login,
+.nav-links .nav-login.a:not(.btn),
+.navbar-links .nav-login,
+.navbar-links .nav-login.a:not(.btn){
     height: 82px;
     border-radius: 0;
     padding: 25px 0px 25px 0px;
+}
+
+span.register.disabled{
+  display: none;
 }
 
 .nav-links .nav-account,.navbar-links .nav-account{
@@ -273,6 +315,17 @@ article.course div.wrapper-course-details{
 
 .container-navbar-links a{
     border-bottom: 5px solid transparent;
+}
+
+.wrapper-preview-menu,
+.content-wrapper .navbar,
+.content-wrapper .course-view{
+  max-width: 1360px;
+  margin:auto;
+}
+
+.content-wrapper .navbar{
+  background-color: #F3F3F3;
 }
 
 .container,
@@ -299,6 +352,26 @@ section.dashboard.outside-app,
 .courses-container .courses .course,
 .view-course-info .info-wrapper,
 .view-courseware .course-wrapper,
+.view-passwordreset .container,
+.view-passwordreset section.outside-app,
+.view-passwordreset .view-profile .profile-self .wrapper-profile-field-account-privacy .u-field-account_privacy,
+.view-profile .profile-self .wrapper-profile-field-account-privacy .view-passwordreset .u-field-account_privacy,
+.view-passwordreset .view-profile .wrapper-profile-sections,
+.view-profile .view-passwordreset .wrapper-profile-sections,
+.view-passwordreset .view-profile .badge-set-display,
+.view-profile .view-passwordreset .badge-set-display,
+.view-passwordreset .introduction,
+.account-settings-container .wrapper-header,
+.account-settings-container .account-settings-sections,
+.static_page,
+.course-info__banner{
+    width: 100%;
+    min-width: 0;
+    max-width: 1360px;
+    margin: 0 auto;
+    box-shadow: unset;
+}
+
 .view-login .container,
 .view-login section.outside-app,
 .view-login .view-profile .profile-self .wrapper-profile-field-account-privacy .u-field-account_privacy,
@@ -315,25 +388,18 @@ section.dashboard.outside-app,
 .view-profile .view-register .wrapper-profile-sections,
 .view-register .view-profile .badge-set-display,
 .view-profile .view-register .badge-set-display,
-.view-passwordreset .container,
-.view-passwordreset section.outside-app,
-.view-passwordreset .view-profile .profile-self .wrapper-profile-field-account-privacy .u-field-account_privacy,
-.view-profile .profile-self .wrapper-profile-field-account-privacy .view-passwordreset .u-field-account_privacy,
-.view-passwordreset .view-profile .wrapper-profile-sections,
-.view-profile .view-passwordreset .wrapper-profile-sections,
-.view-passwordreset .view-profile .badge-set-display,
-.view-profile .view-passwordreset .badge-set-display,
 .view-login .introduction,
-.view-register .introduction,
-.view-passwordreset .introduction,
-.account-settings-container .wrapper-header,
-.account-settings-container .account-settings-sections,
-.static_page,
-.course-info__banner{
+.view-register .introduction{
     width: 100%;
     min-width: 0;
-    max-width: 1360px;
+    max-width: 500px;
     margin: 0 auto;
+    box-shadow: unset;
+}
+
+.course-info__banner{
+  padding-left: 39px;
+  padding-right: 24px;
 }
 
 .navbar.global-header,
@@ -342,12 +408,6 @@ section.dashboard.outside-app,
 .page-banner
 {
   margin: auto;
-}
-
-.container.dashboard,
-.find-courses .courses-container{
-  background-color: #F1F1F1;
-  box-shadow: unset;
 }
 
 .content-wrapper .courses{
@@ -359,7 +419,7 @@ section.dashboard.outside-app,
 }
 
 #seq-content{
-   max-width: 900px;
+   9max-width: 900px;
    margin: auto;
 }
 
@@ -451,6 +511,10 @@ span[role*="link"]:visited:focus,
 }
 
 @media (max-width: 991px){
+  .mobile-menu .mobile-nav-link a{
+    font-weight: 300;
+  }
+
   .mobile-menu .mobile-nav-link a:hover,
   .mobile-menu .mobile-nav-link a:focus,
   .mobile-menu .mobile-nav-link a:active {
@@ -460,11 +524,20 @@ span[role*="link"]:visited:focus,
 
   .mobile-menu .mobile-nav-link form{
     background-color: #FFF;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto; 
+    margin-top: 0!important;
+    margin-bottom: 0!important;
   }
 
   .navbar.global-header .mobile-nav-item.mobile-nav-link{
     width: 100%;
+  }
+}
+
+@media (min-width: 992px){
+  .global-header .nav-links .secondary .dropdown-user-menu .dropdown-item a {
+    font-weight: 300;
   }
 }
 
@@ -505,6 +578,7 @@ input[type="text"]:focus,
 button[type="submit"] {
   border-radius: 0;
   height: auto;
+  line-height:1.5;
 }
 
 input[type="text"],
@@ -1100,6 +1174,7 @@ input[type="button"],
 .ednxtDowngrade-modal__button {
   background-color: #1acfc3;
   border-color: #1acfc3;
+  border-radius: 0;
 }
 
 
@@ -26388,6 +26463,10 @@ a.btn-flat:hover:not(:disabled):not([disabled]):not(.disabled).active,
 
 .course-info__banner h1 {
   color: #1acfc3;
+}
+
+.course-info__banner .media img{
+  height: 100%;
 }
 
 .course-info .course-text::before {

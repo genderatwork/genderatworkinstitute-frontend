@@ -155,7 +155,8 @@ article.course div.wrapper-course-details{
   height: 200px
 }
 
-.landing-page-banner-text {
+.landing-page-banner-text,
+.dashboard-intro .content-container h1 {
   color: #f2f2f2!important;
   text-shadow: 2px 2px #2f2f2f;
   font-size: 28pt;
@@ -177,12 +178,33 @@ article.course div.wrapper-course-details{
   }
 }
 
-.home-intro {
-  background-image: url(./gawbanner.png);
-  max-height: 20em;
+.courses-intro {
+  background-image: url(./course_banner.png)!important;
 }
 
-.home-intro::before {
+.home-intro,
+.dashboard-intro {
+  background-image: url(./home_banner.png)!important;
+}
+.home-intro>div,
+.dashboard-intro>div,
+.courses-intro>div {
+    z-index: 10
+}
+.home-intro,
+.courses-intro,
+.dashboard-intro{
+  height: 50vh;
+  max-height: 25em;
+  position:relative;
+  background-size: cover;
+  background-position: center;
+  box-shadow: inset 0 0 5rem rgba(0,0,0,0.5);
+}
+
+.home-intro::before,
+.courses-intro::before,
+.dashboard-intro::before {
   content: "";
   position: absolute;
   display: block !important;
@@ -190,7 +212,8 @@ article.course div.wrapper-course-details{
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(2,50,70,0.8);
+  max-height: 25em;
+  background-color: rgba(2,50,70,0.3);
 }
 
 .navbar.global-header{
@@ -319,7 +342,12 @@ span.register.disabled{
 
 .wrapper-preview-menu,
 .content-wrapper .navbar,
-.content-wrapper .course-view{
+.content-wrapper .course-view,
+body.view-in-course .content-wrapper .courseware,
+body.view-in-course .content-wrapper .container,
+body.discussion .content-wrapper .page-content-container,
+body.view-progress .wrapper-course-material,
+body.view-progress .content-wrapper .page-content-container{
   max-width: 1360px;
   margin:auto;
 }

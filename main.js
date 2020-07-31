@@ -25,6 +25,21 @@ function alternateOrderOfCourses() {
   }
 }
 
+function initBanners() {
+  var dashboard_banner = $(".dashboard-intro");
+  if (dashboard_banner) {
+    dashboard_banner.css("background-img", "");
+  }
+
+  if (window.location.href.includes("https://www.genderatworkinstitute.org/courses")) {
+      var course_banner = $(".home-intro");
+      if (course_banner) {
+        course_banner.removeClass("home-intro");
+        course_banner.addClass("courses-intro");
+      }
+  }
+}
+
 function initSearch() {
   var navlist = $('.container-navbar-links ul.navbar-links')[1]
   if (navlist) {
@@ -43,6 +58,7 @@ function initNavbar(){
 
 function initPage() {
   initNavbar();
+  initBanners();
   alternateOrderOfCourses();
 }
 

@@ -3,7 +3,7 @@ body,
 h1,h2,.home>header .title>.heading-group p,section.outside-app h1,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6,
 div,section,p,i:not(.fa),span:not(.fa),label{
   font-family: 'Roboto', sans-serif !important;
-  font-weight:300!important;
+  font-weight:400!important;
 }
 
 .window-wrap{
@@ -63,10 +63,6 @@ div.course-info.row {
   }
 }
 
-.course-info{
-  margin-top:auto;
-}
-
 .courses-container .courses .course .course-image .cover-image{
   height: 100%;
 }
@@ -98,7 +94,7 @@ div.wrapper-course-image img{
 
 .courses-container .courses .course .course-info .course-name{
   padding: 20px 5px 0px 5px!important;
-  height:100px;
+  height:auto;
 }
 .courses-container .courses .course .course-info .course-title{
   font-size: 25px;
@@ -354,6 +350,10 @@ body.view-progress .content-wrapper .page-content-container{
 
 .content-wrapper .navbar{
   background-color: #F3F3F3;
+}
+
+nav.footer-links.align-items-center.nav.col-12{
+  display:none;
 }
 
 .container,

@@ -56,7 +56,20 @@ function initNavbar(){
   registerbutton.addClass('px-2')
 }
 
+function loadStaticContent(){
+  url = 'https://genderatwork.github.io/genderatworkinstitute-frontend/landingpage.json'
+  function jsonCallback(json){
+    console.log(json);
+  }
+
+  $.ajax({
+    url: url,
+    dataType: "jsonp"
+  });
+}
+
 function initPage() {
+  loadStaticContent();
   initNavbar();
   initBanners();
   alternateOrderOfCourses();

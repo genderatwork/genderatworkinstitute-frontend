@@ -151,25 +151,27 @@ article.course div.wrapper-course-details{
   height: 200px
 }
 
-.landing-page-banner-text,
+#landing-page-banner-text,
 .dashboard-intro .content-container h1 {
   color: #f2f2f2!important;
   text-shadow: 2px 2px #2f2f2f;
   font-size: 28pt;
 }
 
-.landing-page-sub-heading {
+#landing-page-sub-heading,
+#landing-page-course-heading,
+#landing-page-course-sub-heading {
   text-align: center;
 }
 
-.landing-page-description {
+#landing-page-description {
   margin: auto;
   color: #2f2f2f;
   max-width: 42em;
   font-size: 14pt;
 }
 @media (max-width: 575px) {
-  .landing-page-description {
+  #landing-page-description {
     padding: 0 0.75rem;
   }
 }

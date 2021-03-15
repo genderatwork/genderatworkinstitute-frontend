@@ -180,10 +180,14 @@ article.course div.wrapper-course-details{
   background-image: url(./course_banner.png)!important;
 }
 
-.home-intro,
-.dashboard-intro {
-  background-image: url(./home_banner.png)!important;
+.home-intro {
+  background-image: url(./home_banner.jpg)!important;
 }
+
+.dashboard-intro {
+  background-image: url(./dashboard_banner.png)!important;
+}
+
 .home-intro>div,
 .dashboard-intro>div,
 .courses-intro>div {

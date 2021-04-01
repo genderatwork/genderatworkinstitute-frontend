@@ -151,8 +151,7 @@ article.course div.wrapper-course-details{
   height: 200px
 }
 
-#landing-page-banner-text,
-.content-container h1.landing-page-banner-text{
+.content-container h1{
   color: #f2f2f2!important;
   text-shadow: 2px 2px #2f2f2f;
   font-size: 32pt;

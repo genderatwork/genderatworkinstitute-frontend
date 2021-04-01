@@ -194,16 +194,23 @@ article.course div.wrapper-course-details{
 }
 
 .home-intro,
-.courses-intro,
-.dashboard-intro,
-.home-intro::before,
-.courses-intro::before,
-.dashboard-intro::before{  
+.home-intro::before{  
   height: 50vh;
-/*   max-height: 25em; */
-  padding-bottom: 10em!important;
+  padding-bottom: 10em;
 
 }
+
+
+.dashboard-intro,
+.dashboard-intro::before,
+.courses-intro,
+.courses-intro::before{  
+  height: 50vh;
+  padding-bottom: 0em;
+  padding-top: 2em;
+
+}
+
 .home-intro,
 .courses-intro,
 .dashboard-intro{

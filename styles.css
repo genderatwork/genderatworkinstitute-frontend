@@ -377,6 +377,11 @@ nav.footer-links.align-items-center.nav.col-12{
   display:none;
 }
 
+.wrapper-openassessment__message .message .message__content,
+.xmodule_display.xmodule_ProblemBlock div.problem-progress{
+  display:none;
+}
+
 .container,
 section.outside-app,
 .view-profile .profile-self .wrapper-profile-field-account-privacy .u-field-account_privacy,
